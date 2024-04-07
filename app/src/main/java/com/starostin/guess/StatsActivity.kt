@@ -25,7 +25,7 @@ class StatsActivity : AppCompatActivity() {
 
         val btnBack = findViewById<Button>(R.id.btn_back)
         btnBack.setOnClickListener {
-            finish() // Закрыть текущую активность и вернуться на предыдущий экран
+            finish()
         }
 
         val btnNewSession = findViewById<Button>(R.id.btn_new_session)
@@ -37,6 +37,6 @@ class StatsActivity : AppCompatActivity() {
     private fun startNewSession() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
-        finish() // Закрываем текущую активность
+        finish()
     }
 }
